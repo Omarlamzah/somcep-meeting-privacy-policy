@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy / Politique de Confidentialité — SOMCEP Meeting</title>
+  <meta name="description" content="Politique de Confidentialité officielle pour l'application mobile SOMCEP Meeting (8ème Congrès Annuel SOMCEP 2026). Conforme aux exigences Google Play Console.">
+  <meta name="robots" content="index, follow">
+  
+  <style>
+    :root {
+      --primary: #0f4c81;
+      --primary-dark: #0a3258;
+      --primary-light: #e9f2fb;
+      --accent: #d4af37;
+      --accent-hover: #b8972e;
+      --text-main: #1f2937;
+      --text-muted: #4b5563;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --border: #e2e8f0;
+      --success: #10b981;
+      --info: #0284c7;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 14px rgba(0,0,0,0.08);
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.7;
+      font-size: 15px;
+      padding-bottom: 60px;
+    }
+
+    header.site-header {
+      background: linear-gradient(135deg, #0a2540 0%, #0f4c81 100%);
+      color: #ffffff;
+      padding: 32px 20px;
+      box-shadow: 0 4px 20px rgba(10, 37, 64, 0.25);
+    }
+
+    .header-container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .badge-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+    }
+
+    .badge-accent {
+      background: rgba(212, 175, 55, 0.25);
+      border-color: rgba(212, 175, 55, 0.5);
+      color: #ffd700;
+    }
+
+    h1.app-title {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+    }
+
+    .app-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 13.5px;
+      color: #cbd5e1;
+    }
+
+    .app-meta span strong {
+      color: #ffffff;
+    }
+
+    .lang-switcher-container {
+      margin-top: 8px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .lang-btn {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #ffffff;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .lang-btn:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .lang-btn.active {
+      background: #ffffff;
+      color: var(--primary-dark);
+      border-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    main.content-container {
+      max-width: 900px;
+      margin: 24px auto 0;
+      padding: 0 20px;
+    }
+
+    .quick-summary-box {
+      background: #ffffff;
+      border-left: 4px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .quick-summary-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .highlight-item {
+      background: var(--primary-light);
+      padding: 12px 14px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      color: var(--primary-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .highlight-icon {
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .policy-card {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      padding: 32px 30px;
+      margin-bottom: 24px;
+    }
+
+    .section-block {
+      margin-bottom: 30px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    .section-block:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    h2.section-heading {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h3.sub-heading {
+      font-size: 15.5px;
+      font-weight: 600;
+      color: #334155;
+      margin: 16px 0 8px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: var(--text-muted);
+    }
+
+    ul, ol {
+      margin: 8px 0 16px 24px;
+      color: var(--text-muted);
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    strong {
+      color: var(--text-main);
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 16px 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      text-align: left;
+    }
+
+    th {
+      background: #f1f5f9;
+      color: #334155;
+      font-weight: 600;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .callout {
+      padding: 16px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      margin: 16px 0;
+    }
+
+    .callout-info {
+      background-color: #f0f9ff;
+      border-left: 4px solid var(--info);
+      color: #0369a1;
+    }
+
+    .callout-success {
+      background-color: #f0fdf4;
+      border-left: 4px solid var(--success);
+      color: #15803d;
+    }
+
+    .callout-deletion {
+      background: #fef2f2;
+      border-left: 4px solid #ef4444;
+      color: #991b1b;
+      padding: 18px 22px;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
+
+    .contact-box {
+      background: #f8fafc;
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    .contact-box a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    footer.site-footer {
+      max-width: 900px;
+      margin: 30px auto 0;
+      padding: 0 20px;
+      text-align: center;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+
+    footer.site-footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    @media (max-width: 640px) {
+      header.site-header {
+        padding: 24px 16px;
+      }
+      h1.app-title {
+        font-size: 22px;
+      }
+      .policy-card {
+        padding: 22px 18px;
+      }
+      h2.section-heading {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="badge-bar">
+        <span class="badge badge-accent">Google Play Policy Compliant</span>
+        <span class="badge">Official Application</span>
+        <span class="badge">Loi 09-08 / RGPD</span>
+      </div>
+
+      <h1 class="app-title">Politique de Confidentialité / Privacy Policy</h1>
+      
+      <div class="app-meta">
+        <span>Application : <strong>SOMCEP Meeting</strong></span>
+        <span>Package : <strong>com.itechevent.somcep2026</strong></span>
+        <span>Événement : <strong>8ème Congrès Annuel SOMCEP 2026</strong></span>
+        <span>Dernière mise à jour : <strong>04 Octobre 2026</strong></span>
+      </div>
+
+      <!-- Language Toggle -->
+      <div class="lang-switcher-container">
+        <button class="lang-btn active" id="btn-fr" onclick="switchLanguage('fr')">
+          🇫🇷 Français (Officiel)
+        </button>
+        <button class="lang-btn" id="btn-en" onclick="switchLanguage('en')">
+          🇬🇧 English (Google Play Review)
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="content-container">
+
+    <!-- Quick Highlights -->
+    <div class="quick-summary-box">
+      <div class="quick-summary-title">
+        <span>🛡️</span>
+        <span id="summary-title">Engagements Clés pour la Protection de vos Données</span>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-item">
+          <span class="highlight-icon">🚫</span>
+          <span id="hl-1">Aucune vente ni partage commercial de données</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🔓</span>
+          <span id="hl-2">Navigation libre sans compte obligatoire</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🔒</span>
+          <span id="hl-3">Chiffrement de bout en bout (SSL/HTTPS)</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🗑️</span>
+          <span id="hl-4">Droit à l'effacement immédiat sur demande</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================= -->
+    <!-- FRENCH VERSION (ACTIVE BY DEFAULT)                             -->
+    <!-- ============================================================= -->
+    <div id="content-fr" class="policy-card">
+
+      <section class="section-block">
+        <h2 class="section-heading">1. Introduction et Champ d'Application</h2>
+        <p>
+          La présente Politique de Confidentialité s'applique à l'application mobile <strong>« SOMCEP Meeting »</strong> (Package ID: <code>com.itechevent.somcep2026</code>), éditée par la <strong>Société Marocaine de Chirurgie Esthétique et Plastique (SOMCEP)</strong> en partenariat technique avec l'agence <strong>iTech Events</strong> (itechevent.com).
+        </p>
+        <p>
+          L'application <strong>SOMCEP Meeting</strong> est l'application mobile officielle du <strong>8ème Congrès Annuel de la SOMCEP 2026</strong> (qui se tient du 08 au 10 Octobre 2026 au Savoy Le Grand Hotel à Marrakech, Maroc). Elle a pour vocation d'accompagner les médecins spécialistes, chirurgiens plasticiens, résidents et partenaires dans la consultation du programme scientifique, des e-posters, des résumés de conférences, des biographies des orateurs et des informations logistiques sur place.
+        </p>
+        <p>
+          Nous attachons une importance primordiale au respect de votre vie privée et nous nous conformons scrupuleusement aux dispositions de la <strong>loi marocaine n° 09-08</strong> relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel, ainsi qu'aux <strong>règles du Règlement pour les développeurs Google Play</strong> (Google Play Developer Program Policies - User Data Policy).
+        </p>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">2. Données Collectées et Nature des Traitements</h2>
+        <p>
+          L'application applique le principe fondamental de minimisation des données :
+        </p>
+        
+        <h3 class="sub-heading">A. Utilisation sans authentification préalable</h3>
+        <p>
+          L'accès au programme scientifique complet, à la liste des orateurs, aux ateliers (workshops), aux communications orales et aux plans des salles du congrès est <strong>libre et sans inscription préalable dans l'application</strong>. Vous pouvez utiliser les fonctions principales de l'application sans fournir de données d'identité personnelles.
+        </p>
+
+        <h3 class="sub-heading">B. Données facultatives fournies par l'utilisateur</h3>
+        <p>
+          Dans le cas où vous utilisez les fonctionnalités interactives (consultation de badge individuel, demande de renseignement ou assistance en direct) :
+        </p>
+        <ul>
+          <li><strong>Identité et contact :</strong> Nom, prénom, adresse e-mail professionnelle, numéro de téléphone mobile.</li>
+          <li><strong>Informations professionnelles :</strong> Titre ou spécialité médicale (ex. Chirurgien plasticien, Médecin esthétique, Résident, Partenaire).</li>
+          <li><strong>Identifiant de participant :</strong> Référence d'inscription ou code badge généré lors de votre enregistrement au congrès.</li>
+        </ul>
+
+        <h3 class="sub-heading">C. Données techniques et de fonctionnement</h3>
+        <p>
+          Pour garantir la stabilité de l'application et la distribution des mises à jour scientifiques :
+        </p>
+        <ul>
+          <li>Identifiant anonyme de périphérique (Device ID généré pour la session).</li>
+          <li>Type de terminal, version du système d'exploitation Android, version de l'application SOMCEP Meeting.</li>
+          <li>Rapports techniques d'erreur (Crash logs anonymes) afin de corriger d'éventuels dysfonctionnements.</li>
+        </ul>
+
+        <div class="callout callout-info">
+          <strong>Données NON collectées :</strong> L'application <strong>SOMCEP Meeting</strong> ne collecte <strong>AUCUNE</strong> donnée de géolocalisation GPS précise en arrière-plan, aucun contact du répertoire, aucun enregistrement audio ou micro, aucun historique de navigation web externe, et aucune donnée bancaire dans l'application.
+        </div>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">3. Autorisations Demandées sur l'Appareil (Permissions Android)</h2>
+        <p>
+          L'application peut solliciter des autorisations strictes nécessaires à son bon fonctionnement, que vous pouvez autoriser ou révoquer à tout moment dans les Paramètres de votre appareil Android :
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Permission Android</th>
+                <th>Finalité exacte</th>
+                <th>Caractère</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>android.permission.INTERNET</code></td>
+                <td>Chargement des mises à jour en direct du programme, des abstracts et des interventions chirurgicales retransmises.</td>
+                <td>Requis pour les données en ligne</td>
+              </tr>
+              <tr>
+                <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
+                <td>Détecter si une connexion Wi-Fi ou mobile est active afin de basculer en mode de consultation hors-ligne des résumés déjà téléchargés.</td>
+                <td>Requis</td>
+              </tr>
+              <tr>
+                <td><code>android.permission.POST_NOTIFICATIONS</code></td>
+                <td>Envoyer des notifications push ponctuelles lors du congrès (ex. début d'une session plénière, mise à jour d'horaire d'un workshop).</td>
+                <td>Optionnel (Désactivable)</td>
+              </tr>
+              <tr>
+                <td><code>android.permission.CAMERA</code></td>
+                <td>Permettre au congressiste de scanner un QR Code sur son badge ou sur un stand partenaire. <em>Aucune photo n'est enregistrée ni envoyée sur nos serveurs.</em></td>
+                <td>Optionnel (Uniquement lors du scan actif)</td>
+              </tr>
+              <tr>
+                <td><code>Stockage / Téléchargement (Download)</code></td>
+                <td>Permettre le téléchargement et l'enregistrement local sur votre appareil du programme scientifique officiel en PDF haute définition.</td>
+                <td>Optionnel</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">4. Finalités du Traitement</h2>
+        <p>Les données collectées sont utilisées exclusivement pour :</p>
+        <ol>
+          <li>Fournir aux congressistes l'accès au calendrier dynamique des conférences et ateliers.</li>
+          <li>Permettre le téléchargement hors-ligne des documents officiels (Programme SOMCEP 2026, e-posters).</li>
+          <li>Transmettre des annonces organisationnelles importantes durant les 3 jours du congrès à Marrakech.</li>
+          <li>Vérifier la validité de l'accès aux salles soumises à inscription ou aux ateliers pratiques.</li>
+          <li>Améliorer les performances et la fluidité de l'application mobile.</li>
+        </ol>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">5. Partage des Données et Tiers</h2>
+        <div class="callout callout-success">
+          <strong>Règle d'or :</strong> Nous ne vendons, ne louons, n'échangeons et ne commercialisons <strong>JAMAIS</strong> vos données personnelles à des régies publicitaires, courtiers de données ou tiers à des fins de prospection commerciale.
+        </div>
+        <p>
+          Les données ne peuvent être communiquées qu'aux prestataires techniques de confiance opérant sous contrat strict de sous-traitance et de confidentialité :
+        </p>
+        <ul>
+          <li><strong>Hébergement et Infrastructure :</strong> Serveurs sécurisés gérés par iTech Events garantissant la sécurité des données.</li>
+          <li><strong>Notification Push :</strong> Services Google Firebase Cloud Messaging (FCM) utilisant un jeton technique chiffré sans transmission de votre identité.</li>
+          <li><strong>Obligations légales :</strong> Uniquement si la loi ou une autorité judiciaire marocaine compétente l'exige expressément.</li>
+        </ul>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">6. Sécurité et Durée de Conservation des Données</h2>
+        <p>
+          Toutes les communications entre l'application mobile et les serveurs sont chiffrées selon les protocoles de sécurité <strong>HTTPS / TLS 1.3</strong>. Les données sont hébergées dans des centres de données sécurisés avec des restrictions strictes d'accès physique et logique.
+        </p>
+        <p>
+          <strong>Durée de conservation :</strong> Les données liées à l'événement SOMCEP 2026 sont conservées pendant la durée nécessaire à la clôture scientifique et administrative du congrès (au maximum 12 mois suivant la clôture de l'édition), après quoi elles sont supprimées ou définitivement anonymisées à des fins statistiques.
+        </p>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">7. Vos Droits et Procédure de Suppression des Données (Data Deletion)</h2>
+        <p>
+          Conformément à la législation applicable (Loi 09-08 et RGPD) et aux exigences du <strong>Google Play Console User Data Policy</strong>, vous disposez des droits suivants sur vos données :
+        </p>
+        <ul>
+          <li><strong>Droit d'accès et de consultation :</strong> Obtenir la confirmation et la copie de vos données traitées.</li>
+          <li><strong>Droit de rectification :</strong> Corriger des données inexactes ou incomplètes.</li>
+          <li><strong>Droit à l'effacement définitif (Suppression des données) :</strong> Demander la suppression totale et irréversible de votre compte ou de vos données enregistrées.</li>
+          <li><strong>Droit d'opposition :</strong> Vous opposer à tout moment à la réception de notifications.</li>
+        </ul>
+
+        <div class="callout-deletion">
+          <h3 style="color:#b91c1c; margin-bottom:8px; font-size:15px; font-weight:700;">
+            🗑️ Comment demander la suppression complète de vos données :
+          </h3>
+          <p style="color:#7f1d1d; margin-bottom:10px;">
+            Vous pouvez demander la suppression immédiate de l'ensemble de vos données associées à l'application <strong>SOMCEP Meeting</strong> à tout moment sans frais.
+          </p>
+          <p style="color:#7f1d1d; margin-bottom:10px;">
+            Il vous suffit d'envoyer un email à <strong><a href="mailto:contact@itechevent.com" style="color:#b91c1c; text-decoration:underline;">contact@itechevent.com</a></strong> avec pour objet :<br>
+            <code>« Demande de suppression de données - SOMCEP Meeting »</code>
+          </p>
+          <p style="color:#7f1d1d; margin-bottom:0;">
+            Indiquez simplement votre nom et l'adresse email utilisée. Nos équipes procèderont à la purge complète et définitive de vos données sous <strong>48 heures ouvrées</strong> et vous confirmeront l'exécution par retour d'email.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">8. Protection des Mineurs</h2>
+        <p>
+          L'application <strong>SOMCEP Meeting</strong> s'adresse exclusivement à un public adulte composé de professionnels de santé, praticiens médicaux, chirurgiens, internes et intervenants institutionnels. L'application ne s'adresse pas aux mineurs et ne collecte sciemment aucune donnée concernant des personnes âgées de moins de 18 ans.
+        </p>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">9. Modifications de la Politique de Confidentialité</h2>
+        <p>
+          La présente Politique de Confidentialité peut être mise à jour pour refléter l'évolution des fonctionnalités de l'application ou les obligations réglementaires de Google Play. Toute révision sera immédiatement publiée sur cette même page avec la date de révision actualisée en haut du document.
+        </p>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">10. Contact et Responsable de Traitement</h2>
+        <p>
+          Pour toute question, réclamation ou exercice de vos droits concernant la présente politique, vous pouvez nous contacter directement :
+        </p>
+        <div class="contact-box">
+          <p><strong>Organisateur Officiel :</strong> Société Marocaine de Chirurgie Esthétique et Plastique (SOMCEP)</p>
+          <p><strong>Opérateur Technique :</strong> iTech Events (itechagencymaroc / itechevent.com)</p>
+          <p><strong>Adresse :</strong> Casablanca, Maroc</p>
+          <p><strong>Email officiel :</strong> <a href="mailto:contact@itechevent.com">contact@itechevent.com</a> (ou <a href="mailto:omarlamzah64@gmail.com">omarlamzah64@gmail.com</a>)</p>
+          <p><strong>Téléphone :</strong> <a href="tel:+212679841447">+212 679 841 447</a></p>
+          <p><strong>Site Web officiel :</strong> <a href="https://somcep.itechevent.com" target="_blank" rel="noopener noreferrer">https://somcep.itechevent.com</a></p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ============================================================= -->
+    <!-- ENGLISH VERSION (FOR GOOGLE PLAY REVIEWERS & INTERNATIONAL)   -->
+    <!-- ============================================================= -->
+    <div id="content-en" class="policy-card" style="display: none;">
+
+      <section class="section-block">
+        <h2 class="section-heading">1. Introduction & Overview</h2>
+        <p>
+          This Privacy Policy applies to the mobile application <strong>"SOMCEP Meeting"</strong> (Package ID: <code>com.itechevent.somcep2026</code>), published by the <strong>Société Marocaine de Chirurgie Esthétique et Plastique (SOMCEP)</strong> in technical cooperation with <strong>iTech Events</strong> (itechevent.com).
+        </p>
+        <p>
+          The <strong>SOMCEP Meeting</strong> mobile application is designed as the official companion for the <strong>8th SOMCEP Annual Congress 2026</strong> (held from October 8 to 10, 2026 at the Savoy Le Grand Hotel, Marrakech, Morocco). It enables healthcare professionals, plastic and reconstructive surgeons, medical residents, and attendees to consult the scientific schedule, live surgery transmissions, keynote speaker profiles, e-posters, and congress venue maps.
+        </p>
+        <p>
+          We are committed to maintaining the highest level of privacy and data security in strict compliance with the <strong>Google Play Developer Program Policies (User Data Policy)</strong> and Moroccan Law 09-08 on Personal Data Protection.
+        </p>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">2. Information We Collect and Process</h2>
+        <p>We adhere to the principle of data minimization:</p>
+
+        <h3 class="sub-heading">A. Direct usage without mandatory registration</h3>
+        <p>
+          Users can browse all scientific tracks, surgical programs, faculty listings, and venue details <strong>without creating an account or providing any personal details</strong>.
+        </p>
+
+        <h3 class="sub-heading">B. Voluntary user-submitted data</h3>
+        <p>
+          If you interact with registration lookup, support inquiry, or badge verification features:
+        </p>
+        <ul>
+          <li><strong>Identity and Contact:</strong> Full name, professional email address, mobile phone number.</li>
+          <li><strong>Professional Info:</strong> Medical specialty (e.g., Plastic Surgeon, Aesthetic Physician, Resident).</li>
+          <li><strong>Attendee Identifier:</strong> Registration number or badge barcode assigned upon event accreditation.</li>
+        </ul>
+
+        <h3 class="sub-heading">C. Technical & Diagnostic Data</h3>
+        <p>
+          To maintain app stability and ensure offline schedule availability:
+        </p>
+        <ul>
+          <li>Anonymous device identifier (session-generated).</li>
+          <li>Device model, Android operating system version, app build version.</li>
+          <li>Non-personally identifiable crash logs for diagnostic and bug fixing purposes.</li>
+        </ul>
+
+        <div class="callout callout-info">
+          <strong>Data NOT Collected:</strong> SOMCEP Meeting does <strong>NOT</strong> collect real-time background GPS tracking, address book contacts, microphone audio, photo gallery contents, browser history, or financial payment details.
+        </div>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">3. Device Permissions Disclosed</h2>
+        <p>
+          The application may request the following permissions on your Android device solely to execute core conference features:
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Android Permission</th>
+                <th>Exact Purpose</th>
+                <th>Requirement</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>android.permission.INTERNET</code></td>
+                <td>Fetch live program schedule, keynote updates, and scientific abstracts from our secure API.</td>
+                <td>Required for online mode</td>
+              </tr>
+              <tr>
+                <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
+                <td>Determine connectivity status to seamlessly serve cached schedules when offline at the venue.</td>
+                <td>Required</td>
+              </tr>
+              <tr>
+                <td><code>android.permission.POST_NOTIFICATIONS</code></td>
+                <td>Receive timely congress announcements (e.g. session starting reminders, room location updates).</td>
+                <td>Optional (Can be turned off)</td>
+              </tr>
+              <tr>
+                <td><code>android.permission.CAMERA</code></td>
+                <td>Allow attendee badge or event check-in QR code scanning. <em>No camera footage or photos are saved, stored, or uploaded.</em></td>
+                <td>Optional (Only during active scan)</td>
+              </tr>
+              <tr>
+                <td><code>Storage / File Download</code></td>
+                <td>Download the official SOMCEP 2026 Scientific Program PDF to your device for offline reading.</td>
+                <td>Optional</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">4. Purposes of Data Processing</h2>
+        <p>Collected information is exclusively utilized to:</p>
+        <ol>
+          <li>Deliver the interactive congress agenda and live session schedules.</li>
+          <li>Facilitate the offline reading of scientific documents and e-posters.</li>
+          <li>Send real-time alerts regarding schedule changes or urgent symposium notices during the conference.</li>
+          <li>Verify attendee check-in and workshop access at Savoy Le Grand Hotel Marrakech.</li>
+          <li>Troubleshoot technical issues and enhance mobile performance.</li>
+        </ol>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">5. Data Sharing & Third Parties</h2>
+        <div class="callout callout-success">
+          <strong>Strict Policy:</strong> We do <strong>NOT</strong> sell, rent, commercialize, or trade your personal data with third-party advertisers, brokers, or marketing networks.
+        </div>
+        <p>Information is only handled by trusted technical partners strictly necessary for congress operations:</p>
+        <ul>
+          <li><strong>Cloud Infrastructure:</strong> Secure servers managed by iTech Events under strict encryption and privacy terms.</li>
+          <li><strong>Push Notifications:</strong> Google Firebase Cloud Messaging (FCM) using pseudonymous device tokens.</li>
+          <li><strong>Legal Obligations:</strong> Only when strictly required by enforceable Moroccan legal authorities.</li>
+        </ul>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">6. Data Security & Storage Duration</h2>
+        <p>
+          All data transmitted between the mobile application and backend services is encrypted using <strong>HTTPS with TLS 1.3</strong>. Strict access controls and firewalls are maintained on all hosting instances.
+        </p>
+        <p>
+          <strong>Retention Period:</strong> Data associated with the SOMCEP 2026 congress is stored only for the duration required to complete the scientific and administrative closure of the event (maximum 12 months after event conclusion), after which it is securely deleted or anonymized.
+        </p>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">7. Your Rights & Account/Data Deletion Request</h2>
+        <p>
+          In accordance with the Google Play User Data Policy and applicable privacy regulations, you have full control over your data:
+        </p>
+        <ul>
+          <li><strong>Right of Access:</strong> Request a copy of any personal data stored about you.</li>
+          <li><strong>Right of Rectification:</strong> Request correction of inaccurate information.</li>
+          <li><strong>Right of Erasure (Complete Data Deletion):</strong> Request the permanent removal of all your records.</li>
+        </ul>
+
+        <div class="callout-deletion">
+          <h3 style="color:#b91c1c; margin-bottom:8px; font-size:15px; font-weight:700;">
+            🗑️ How to Request Complete Data Deletion:
+          </h3>
+          <p style="color:#7f1d1d; margin-bottom:10px;">
+            You can request the immediate, permanent deletion of any personal data associated with the <strong>SOMCEP Meeting</strong> app at any time without fees.
+          </p>
+          <p style="color:#7f1d1d; margin-bottom:10px;">
+            Send an email to <strong><a href="mailto:contact@itechevent.com" style="color:#b91c1c; text-decoration:underline;">contact@itechevent.com</a></strong> with the subject line:<br>
+            <code>"Data Deletion Request - SOMCEP Meeting"</code>
+          </p>
+          <p style="color:#7f1d1d; margin-bottom:0;">
+            Please state your name and registered email address. Our administration team will permanently delete your records within <strong>48 business hours</strong> and send you written confirmation.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">8. Children's Privacy</h2>
+        <p>
+          The <strong>SOMCEP Meeting</strong> application is strictly designed for medical professionals, surgeons, doctors, healthcare practitioners, and congress delegates (18 years and older). We do not target or knowingly collect data from children under the age of 13.
+        </p>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">9. Policy Updates</h2>
+        <p>
+          Any revisions to this Privacy Policy will be posted immediately on this webpage, with the updated revision date prominently displayed at the top.
+        </p>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-heading">10. Contact Us & Data Controller</h2>
+        <p>
+          For any questions, requests, or privacy concerns regarding this policy, please reach out to:
+        </p>
+        <div class="contact-box">
+          <p><strong>Official Organizer:</strong> Société Marocaine de Chirurgie Esthétique et Plastique (SOMCEP)</p>
+          <p><strong>Technical Operator:</strong> iTech Events (itechagencymaroc / itechevent.com)</p>
+          <p><strong>Address:</strong> Casablanca, Morocco</p>
+          <p><strong>Official Email:</strong> <a href="mailto:contact@itechevent.com">contact@itechevent.com</a> (or <a href="mailto:omarlamzah64@gmail.com">omarlamzah64@gmail.com</a>)</p>
+          <p><strong>Phone:</strong> <a href="tel:+212679841447">+212 679 841 447</a></p>
+          <p><strong>Website:</strong> <a href="https://somcep.itechevent.com" target="_blank" rel="noopener noreferrer">https://somcep.itechevent.com</a></p>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      © 2026 SOMCEP — Société Marocaine de Chirurgie Esthétique et Plastique & iTech Events. Tous droits réservés.
+    </p>
+    <p style="margin-top: 6px;">
+      <a href="https://somcep.itechevent.com">somcep.itechevent.com</a> • <a href="https://itechevent.com">itechevent.com</a>
+    </p>
+  </footer>
+
+  <script>
+    function switchLanguage(lang) {
+      const frContent = document.getElementById('content-fr');
+      const enContent = document.getElementById('content-en');
+      const btnFr = document.getElementById('btn-fr');
+      const btnEn = document.getElementById('btn-en');
+      
+      const summaryTitle = document.getElementById('summary-title');
+      const hl1 = document.getElementById('hl-1');
+      const hl2 = document.getElementById('hl-2');
+      const hl3 = document.getElementById('hl-3');
+      const hl4 = document.getElementById('hl-4');
+
+      if (lang === 'en') {
+        frContent.style.display = 'none';
+        enContent.style.display = 'block';
+        btnFr.classList.remove('active');
+        btnEn.classList.add('active');
+
+        summaryTitle.textContent = 'Key Commitments to Protect Your Privacy';
+        hl1.textContent = 'Zero sale or commercial sharing of user data';
+        hl2.textContent = 'Free browsing without mandatory login';
+        hl3.textContent = 'End-to-end encryption (SSL / HTTPS)';
+        hl4.textContent = 'Permanent data deletion upon email request';
+      } else {
+        frContent.style.display = 'block';
+        enContent.style.display = 'none';
+        btnFr.classList.add('active');
+        btnEn.classList.remove('active');
+
+        summaryTitle.textContent = 'Engagements Clés pour la Protection de vos Données';
+        hl1.textContent = 'Aucune vente ni partage commercial de données';
+        hl2.textContent = 'Navigation libre sans compte obligatoire';
+        hl3.textContent = 'Chiffrement de bout en bout (SSL/HTTPS)';
+        hl4.textContent = 'Droit à l\'effacement immédiat sur demande';
+      }
+    }
+
+    // Auto-detect browser language if English
+    try {
+      const userLang = navigator.language || navigator.userLanguage;
+      if (userLang && userLang.toLowerCase().startsWith('en')) {
+        switchLanguage('en');
+      }
+    } catch(e) {}
+  </script>
+</body>
+</html>
